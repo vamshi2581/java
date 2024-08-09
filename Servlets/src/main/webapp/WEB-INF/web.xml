@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Servlets</display-name>
+  
+  <servlet>
+  <servlet-name>xyz</servlet-name>
+  <servlet-class>com.org.web.Demoservlet</servlet-class>
+  </servlet>
+  <servlet>
+  <servlet-name>vamshi</servlet-name>
+<servlet-class>com.org.reqres.ServletResquest_Response</servlet-class>  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>xyz</servlet-name>
+  <url-pattern>/Welcome</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+   <servlet-name>vamshi</servlet-name>
+   <url-pattern>/check</url-pattern>
+   <url-pattern>/prq</url-pattern>
+  </servlet-mapping>
+ 
+ <servlet>
+ <servlet-name>Sendredirect</servlet-name>
+ <servlet-class>com.org.Sendre.Send_redirect</servlet-class>
+ 
+ </servlet>
+ <servlet-mapping>
+  <servlet-name>Sendredirect</servlet-name>
+  <url-pattern>/search</url-pattern>
+ </servlet-mapping>
+  
+</web-app>
